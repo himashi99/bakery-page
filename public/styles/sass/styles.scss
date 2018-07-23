@@ -249,8 +249,8 @@ main p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-right: 250px;
-  padding-left: 250px;
+  padding-right: 280px;
+  padding-left: 280px;
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -288,11 +288,19 @@ main p {
       margin-bottom: 25px;
     }
 
+    .form-group:nth-child(6) {
+      width: 200px;
+    }
+
     p {
       font-family: 'Quicksand', sans-serif;
       font-weight: bold;
       padding-left: 15px;
-  }
+    }
+
+    .col-xs-9 {
+      width: 100% !important;
+    }
 
     .btn-primary {
       background-color: #addccc;

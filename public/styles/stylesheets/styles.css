@@ -223,8 +223,8 @@ main p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-right: 250px;
-  padding-left: 250px;
+  padding-right: 280px;
+  padding-left: 280px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -254,10 +254,16 @@ main p {
 .contact-box form .form-group {
   margin-bottom: 25px;
 }
+.contact-box form .form-group:nth-child(6) {
+  width: 200px;
+}
 .contact-box form p {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   padding-left: 15px;
+}
+.contact-box form .col-xs-9 {
+  width: 100% !important;
 }
 .contact-box form .btn-primary {
   background-color: #addccc;
