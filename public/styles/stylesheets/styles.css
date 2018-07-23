@@ -177,14 +177,14 @@ main p {
 }
 
 .carousel {
-  width: 100%;
+  width: 1200px;
   height: 28.5em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .carousel .carousel-inner {
-  width: 50%;
+  width: 70%;
   height: 200px;
 }
 .carousel .item {
@@ -216,7 +216,7 @@ main p {
   color: gray !important;
 }
 .carousel .carousel-indicators li {
-  background-color: addccc !important;
+  background-color: #addccc !important;
 }
 
 .contact-box {
@@ -228,9 +228,46 @@ main p {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.contact-form {
-  width: 510px;
+.contact-box .contact-info {
+  padding-left: 20px;
+}
+.contact-box .contact-image {
+  border: 2px solid #addccc;
+  padding: 10px;
+}
+.contact-box .contact-form {
+  width: 450px;
+}
+.contact-box .contact-methods {
+  margin-bottom: 25px;
+}
+.contact-box .contact-methods .method {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.contact-box .contact-methods .method-info {
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact-box form .form-group {
+  margin-bottom: 25px;
+}
+.contact-box form p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.contact-box form .btn-primary {
+  background-color: #addccc;
+  border-color: #addccc;
+}
+.contact-box form .btn-default {
+  border-color: #addccc;
+}
+.contact-box form .btn:hover {
+  background-color: #cdd1d6 !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400|Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -205,20 +210,20 @@
         <div class="contact-info-box">
           <div class="contact-info">
             <div class="contact-methods">
-              <p>Email</p>
-              <p>info@cakes.com</p>
+              <p class="method">Email</p>
+              <p class="method-info">info@cakes.com</p>
             </div>
             <div class="contact-methods">
-              <p>Phone</p>
-              <p>(416)555-5555)</p>
+              <p class="method">Phone</p>
+              <p class="method-info">(416) 555-5555</p>
             </div>
             <div class="contact-methods">
-              <p>Storefront</p>
-              <p>82 Yonge Street, Toronto</p>
+              <p class="method">Storefront</p>
+              <p class="method-info">82 Yonge Street, Toronto</p>
             </div>
             <div class="contact-methods">
-              <p>Hours</p>
-              <p>by appointment, Tuesday through Saturday</p>
+              <p class="method">Hours</p>
+              <p class="method-info">by appointment, Tuesday through Saturday</p>
             </div>
           </div> <!-- contact-info -->
           <div class="contact-image">
@@ -227,32 +232,38 @@
         </div> <!-- contact-info-box -->
         <div class="contact-form">
           <form class="form-horizontal" action="/examples/actions/confirmation.php" method="post">
-        <div class="form-group">
-            <label class="control-label col-xs-3" for="firstName">First Name:</label>
+            <div class="form-group">
+              <!-- <label class="control-label col-xs-3" for="firstName">First Name:</label> -->
+            <p> First Name* </p>
             <div class="col-xs-9">
-                <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+              <!-- <input type="text" class="form-control" id="lastName" placeholder="Last Name" required> -->
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-3" for="lastName">Last Name:</label>
+          </div>
+          <div class="form-group">
+            <!-- <label class="control-label col-xs-3" for="lastName">Last Name:</label> -->
+            <p> Last Name* </p>
             <div class="col-xs-9">
                 <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
             </div>
-        </div>
-		<div class="form-group">
-            <label class="control-label col-xs-3" for="inputEmail">Email Address:</label>
+          </div>
+		      <div class="form-group">
+            <!-- <label class="control-label col-xs-3" for="inputEmail">Email Address:</label> -->
+            <p> Email Address* </p>
             <div class="col-xs-9">
                 <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" required>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-3" for="phoneNumber">Phone Number:</label>
+          </div>
+          <div class="form-group">
+            <!-- <label class="control-label col-xs-3" for="event">Phone Number:</label> -->
+            <p> Event </p>
             <div class="col-xs-9">
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+                <input type="text" class="form-control" id="event">
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-3">Date of Birth:</label>
+          </div>
+          <div class="form-group">
+            <!-- <label class="control-label col-xs-3">Date of Birth:</label> -->
+            <p> Event Date </p>
             <div class="col-xs-3">
                 <select class="form-control">
                     <option>Date</option>
@@ -268,46 +279,21 @@
                     <option>Year</option>
                 </select>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-3" for="postalAddress">Postal Address:</label>
+          </div>
+          <div class="form-group">
+            <!-- <label class="control-label col-xs-3" for="numberGuest">Zip Code:</label> -->
+            <p> Number of Guests </p>
             <div class="col-xs-9">
-                <textarea rows="3" class="form-control" id="postalAddress" placeholder="Postal Address" required></textarea>
+                <input type="text" class="form-control" id="numberGuest">
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-3" for="ZipCode">Zip Code:</label>
+          </div>
+          <div class="form-group">
+            <!-- <label class="control-label col-xs-3" for="message">Postal Address:</label> -->
+            <p> Message </p>
             <div class="col-xs-9">
-                <input type="text" class="form-control" id="ZipCode" placeholder="Zip Code" required>
+                <textarea rows="3" class="form-control" id="message" placeholder="Message"></textarea>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-xs-3">Gender:</label>
-            <div class="col-xs-2">
-                <label class="radio-inline">
-                    <input type="radio" name="genderRadios" value="male" required> Male
-                </label>
-            </div>
-            <div class="col-xs-2">
-                <label class="radio-inline">
-                    <input type="radio" name="genderRadios" value="female" required> Female
-                </label>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-offset-3 col-xs-9">
-                <label class="checkbox-inline">
-                    <input type="checkbox" value="news"> Send me latest news and updates.
-                </label>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-xs-offset-3 col-xs-9">
-                <label class="checkbox-inline">
-                    <input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
-                </label>
-            </div>
-        </div>
+          </div>
         <br>
         <div class="form-group">
             <div class="col-xs-offset-3 col-xs-9">
@@ -315,7 +301,7 @@
                 <input type="reset" class="btn btn-default" value="Reset">
             </div>
         </div>
-    </form>
+      </form>
         </div> <!-- contact-form -->
       </div> <!-- contact-box -->
     </section>
