@@ -1,0 +1,222 @@
+.logo-div {
+  display: flex !important;
+  justify-content: center;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  display: flex;
+  margin-top: 4rem;
+  background-color: white !important;
+  border: none !important;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.14rem;
+}
+
+.nav li {
+  margin-right: 1.5rem;
+}
+
+.banner-image-div {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  background-color: white;
+  border: 2px solid red;
+  position: relative;
+  z-index: 1;
+}
+
+.what-we-do-description {
+  height: 25rem;
+  width: 85rem;
+}
+
+main h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5em;
+  font-weight: 100 !important;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 0px;
+}
+
+main p {
+  margin-top: 1.1em;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
+}
+
+.down-arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#background1 {
+  position: relative;
+  z-index: -1;
+}
+
+.about-me {
+  display: flex !important;
+  align-items: center;
+  height: 80rem;
+  background-color: white;
+  border: 2px solid red;
+  position: relative;
+  z-index: 1;
+}
+.about-me h1 {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.about-me figure {
+  float: right;
+  padding-left: 4rem;
+  padding-bottom: 4rem;
+}
+.about-me p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6em;
+}
+
+.about-me-div {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+#about-us {
+  position: relative;
+  z-index: 1;
+}
+
+.background2 {
+  position: relative;
+  z-index: -1;
+}
+
+.gallery {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100rem;
+  background-color: white;
+  border: 2px solid red;
+  position: relative;
+  z-index: 1;
+}
+.gallery h1 {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.gallery-div {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
+.cake-gallery {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: none;
+  padding-left: 0;
+}
+
+.cake-gallery-top {
+  margin-bottom: 3.5rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.overlay {
+  height: 350px;
+  width: 250px;
+}
+.overlay p {
+  position: relative;
+  top: 300px;
+}
+
+.show-me {
+  visibility: hidden;
+}
+
+/*<-----------------------------------------------Quotes Carousel---------------------------------------------------------->*/
+.testimonials {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.carousel {
+  width: 100%;
+  height: 28.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel .carousel-inner {
+  width: 50%;
+  height: 200px;
+}
+.carousel .item {
+  height: 10em;
+}
+.carousel .item p {
+  padding-left: 1.18em;
+  padding-right: 1.18em;
+  font-family: serif;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+.carousel blockquote:before, .carousel blockquote:after {
+  content: '\f10d';
+  font-family: 'FontAwesome';
+  color: #addccc;
+}
+.carousel blockquote:after {
+  content: '\f10e';
+  float: right;
+}
+.carousel .carousel-control.left {
+  background-image: none !important;
+}
+.carousel .carousel-control.right {
+  background-image: none !important;
+}
+.carousel .glyphicon {
+  color: gray !important;
+}
+.carousel .carousel-indicators li {
+  background-color: addccc !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
