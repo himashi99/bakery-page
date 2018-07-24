@@ -37,7 +37,7 @@ main {
   background-color: white;
   border: 2px solid red;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
 }
 
 .what-we-do-description {
@@ -82,7 +82,7 @@ main p {
   background-color: white;
   border: 2px solid red;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
 
   h1 {
     text-align: center;
@@ -114,11 +114,12 @@ main p {
 
 #about-us {
   position: relative;
-  z-index: 1;
+  // z-index: 1;
 }
 
-.background2 {
+#background2 {
   position: relative;
+  // top: -850px;
   z-index: -1;
 }
 
@@ -130,7 +131,7 @@ main p {
   background-color: white;
   border: 2px solid red;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
 
   h1 {
     text-align: center;
@@ -139,6 +140,10 @@ main p {
     text-transform: uppercase;
     margin-bottom: 2.5rem;
   }
+}
+
+#gallery-scroll {
+  position: relative;
 }
 
 .gallery-div {
@@ -298,6 +303,10 @@ main p {
       padding-left: 15px;
     }
 
+    .form-control {
+      border-color: #addccc;
+    }
+
     .col-xs-9 {
       width: 100% !important;
     }
@@ -315,5 +324,11 @@ main p {
       background-color: #cdd1d6 !important;
     }
   }
+}
 
+/* Media Query */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
 }
