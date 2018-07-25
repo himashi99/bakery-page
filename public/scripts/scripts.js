@@ -26,16 +26,6 @@ function parallax3() {
 }
 window.addEventListener('scroll', parallax3);
 
-// function parallax4() {
-//   var image4;
-//   var e = document.getElementById("gallery-scroll");
-//   var topPos2 = e.offsetTop;
-//
-//   image4 = document.getElementById("gallery-scroll");
-//   image4.style.top = topPos2 * -0.1 + 'px';
-// }
-// window.addEventListener('scroll', parallax4);
-
 var image4;
 function parallax4() {
   ypos = window.pageYOffset;
@@ -43,6 +33,48 @@ function parallax4() {
   image4.style.top = ypos * -0.5 + 'px';
 }
 window.addEventListener('scroll', parallax4);
+
+function parallax5() {
+  var image5;
+  var f = document.getElementById("background3");
+  var topPos = f.offsetTop;
+
+  image5 = document.getElementById("background3");
+  image5.style.top = topPos * -0.5 + 'px';
+}
+window.addEventListener('scroll', parallax5);
+
+var image6;
+function parallax6() {
+  ypos = window.pageYOffset;
+  image6 = document.getElementById("testimonials-scroll");
+  image6.style.top = ypos * -0.8 + 'px';
+}
+window.addEventListener('scroll', parallax6);
+
+var image7;
+function parallax7() {
+  ypos = window.pageYOffset;
+  image7 = document.getElementById("contact-scroll");
+  image7.style.top = ypos * -0.4 + 'px';
+}
+window.addEventListener('scroll', parallax7);
+
+// // init controller
+// 						var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+// 						// build scenes
+// 						new ScrollMagic.Scene({triggerElement: "#parallax1"})
+// 										.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+// 										.addIndicators()
+// 										.addTo(controller);
+// 						new ScrollMagic.Scene({triggerElement: "#parallax2"})
+// 										.setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+// 										.addIndicators()
+// 										.addTo(controller);
+// 						new ScrollMagic.Scene({triggerElement: "#parallax3"})
+// 										.setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+// 										.addIndicators()
+// 										.addTo(controller);
 
 
 $(function() {

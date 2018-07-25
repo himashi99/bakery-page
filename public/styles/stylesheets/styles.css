@@ -169,7 +169,16 @@ main p {
   visibility: hidden;
 }
 
+#background3 {
+  position: relative;
+  z-index: -1;
+}
+
 /*<-----------------------------------------------Quotes Carousel---------------------------------------------------------->*/
+#testimonials-scroll {
+  position: relative;
+}
+
 .testimonials {
   display: flex;
   justify-content: center;
@@ -194,7 +203,7 @@ main p {
   padding-left: 1.18em;
   padding-right: 1.18em;
   font-family: serif;
-  color: #333;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
 .carousel blockquote:before, .carousel blockquote:after {
@@ -217,6 +226,10 @@ main p {
 }
 .carousel .carousel-indicators li {
   background-color: #addccc !important;
+}
+
+#contact-scroll {
+  position: relative;
 }
 
 .contact-box {
